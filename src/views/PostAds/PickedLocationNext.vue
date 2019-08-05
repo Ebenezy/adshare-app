@@ -9,7 +9,7 @@
                 </div>
                 <router-link to="PickedLocationNext">
                     <div class="picked-location-next">
-                        <button class="picked-location-next-btn">E-Centre</button>
+                        <router-link to="PostAdsPrice"><button class="picked-location-next-btn">E-Centre</button></router-link>
                         <div class="next-btn">
                             <img src="../../assets/images/ads_location.svg" alt="AdShare">
                             <span class="">5</span>
@@ -18,7 +18,7 @@
                 </router-link>
                 <router-link to="PickedLocationNext">
                     <div class="picked-location-next">
-                        <button class="picked-location-next-btn">SPAR - Tejuosho</button>
+                        <router-link to="PostAdsPrice"><button class="picked-location-next-btn">SPAR - Tejuosho</button></router-link>
                         <div class="next-btn">
                             <img src="../../assets/images/ads_location.svg" alt="AdShare">
                             <span class="">12</span>
