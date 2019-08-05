@@ -1,0 +1,508 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url('../../assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('../../assets/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Avenir LT Std 55 Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 55 Roman'), url('../../assets/fonts/avenir/AvenirLTStd-Roman.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 55 Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 55 Oblique'), url('../../assets/fonts/avenir/AvenirLTStd-Oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 35 Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 35 Light'), url('../../assets/fonts/avenir/AvenirLTStd-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 35 Light Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 35 Light Oblique'), url('../../assets/fonts/avenir/AvenirLTStd-LightOblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 45 Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 45 Book'), url('../../assets/fonts/avenir/AvenirLTStd-Book.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 45 Book Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 45 Book Oblique'), url('../../assets/fonts/avenir/AvenirLTStd-BookOblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 65 Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 65 Medium'), url('../../assets/fonts/avenir/AvenirLTStd-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 65 Medium Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 65 Medium Oblique'), url('../../assets/fonts/avenir/AvenirLTStd-MediumOblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 85 Heavy'), url('../../assets/fonts/avenir/AvenirLTStd-Heavy.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 85 Heavy Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 85 Heavy Oblique'), url('../../assets/fonts/avenir/AvenirLTStd-HeavyOblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 95 Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 95 Black'), url('../../assets/fonts/avenir/AvenirLTStd-Black.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir LT Std 95 Black Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 95 Black Oblique'), url('../../assets/fonts/avenir/AvenirLTStd-BlackOblique.woff') format('woff');
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.figure_input,.code_input,.login_input,.form-input,select,textarea,button,.form-control,.input-field:focus,.input-field:active {
+    outline:0px !important;
+    -webkit-appearance:none!important;
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none !important;
+}
+.splash-screen{
+    width: 100%;
+    height: 100vh;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.splash-screen-foot img{
+    padding-bottom: 20px;
+}
+
+.login-screen{
+    /*opacity: 0.8;*/
+    /*background-image: linear-gradient(180deg, rgba(0,0,0,0.00) 0%, #000000 76%);*/
+    background:linear-gradient(180deg,rgba(0,0,0,0.7)0%,rgba(0,0,0,0.8)),url(../../assets/images/bg_girl.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.register-page{
+    width: 100%;
+    height: 100vh;
+    background: #00B4CD;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.landing-page{
+    width: 100%;
+    height: 100vh;
+    background: url(../../assets/images/bg_city.png) center bottom no-repeat;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.login-txt p{
+    font-family: Montserrat-ExtraLight;
+    font-size: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 34px;
+}
+.bold-txt {
+    font-family: Montserrat-Bold;
+    font-size: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 34px;
+}
+.login-box{
+    margin: 0 40px;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+.email_label{
+    padding: 0 10px;
+    margin: 1rem;
+    border-bottom: 1px solid #979797;
+}
+.email_label2{
+    padding: 0 10px;
+    margin: 1rem;
+}
+.email_label3{
+    padding: 0 10px 40px;
+    margin: 1rem;
+}
+.label-email{
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    color: #0F83D1;
+    letter-spacing: 1px;
+}
+.label-email2{
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    color: #0F83D1;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+}
+.login_input{
+    width: 100%;
+    border: none;
+    background: none;
+    opacity: 0.5;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    color: #585858;
+    letter-spacing: 0;
+    padding: 5px 0;
+}
+.login_input::placeholder {
+    color: #585858;
+}
+.verify_code{
+    display: flex;
+    justify-content: space-between;
+}
+.code_input{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #9B9B9B;
+    background: none;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    color: #585858;
+    text-align: center;
+    letter-spacing: 0;
+    padding: 5px 0;
+}
+.code_input::placeholder {
+    color: #585858;
+}
+.login_click{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+.register_click{
+    margin: 0 -1rem;
+}
+.login-btn{
+    background: #00B4CD;
+    font-family: Montserrat-Bold;
+    font-size: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem 4.5rem;
+}
+.register-btn{
+    width: 100%;
+    background: #0F83D1;
+    font-family: Montserrat-Bold;
+    font-size: 23px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem 4.5rem;
+}
+.finger_print{
+    background: #0F83D1;
+    padding: 1rem 2rem;
+}
+.finger_print img{
+    width: 34px;
+    height: 34px;
+}
+.new_here p{
+    font-family: Montserrat-Regular;
+    font-size: 17px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.create_account_now{
+    font-family: Montserrat-ExtraBold;
+    font-size: 17px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.need_help{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.need_help2{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.verify_txt p{
+    font-family: Montserrat-Regular;
+    font-size: 17px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.foot-note-2{
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.foot-note-2 p{
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.fontawesom{
+    opacity: 1;
+    color: #ffffff;
+    margin: 0 2px;
+}
+.fontawesom1{
+    opacity: 0.5;
+    color: #ffffff;
+    margin: 0 2px;
+}
+.post-ads-nav{
+    background: #0F83D1;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0;
+}
+.ads-history-nav{
+    background: #00B4CD;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0;
+}
+.back-btn{
+    padding: 1rem 0 0 1rem;
+}
+.head-title{
+    padding-top: 1.5rem;
+}
+.head-title h4{
+    font-family: Montserrat-SemiBold;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+.post-ads-body{
+    padding: 1.5rem 5px;
+}
+.post-ads-body h5{
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    color: #0F83D1;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+.pick-location{
+    border-bottom: 1px solid #D5D5D5;
+    padding: 1.2rem 0;
+}
+.pick-location p{
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    color: #585858;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+.select-location{
+    text-align: center;
+}
+.select-location p{
+    font-family: Montserrat-Regular;
+    font-size: 17px;
+    color: #4A4A4A;
+    text-align: center;
+}
+.select-location span{
+    font-family: Montserrat-Bold;
+    font-size: 17px;
+    color: #4A4A4A;
+    text-align: center;
+}
+.picked-location{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: #0F83D1;
+    border-radius: 30px;
+    border: 3px solid #FFFFFF;
+
+}
+.picked-location-btn{
+    width: 100%;
+    text-align: left;
+    padding-left: 1.5rem;
+    font-family: Montserrat-SemiBold;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    border: none;
+    background: none;
+}
+.post-ads-confirm-payment{
+    width: 100%;
+    height: 100vh;
+}
+.confirm-payment-head{
+    background: #0F83D1;
+    padding: 3rem 0 1rem;
+    text-align: center;
+}
+.input-figure-bg{
+    background-color: #075284;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    height: 80%;
+    width: 100%;
+}
+.input-figure-bg p{
+    opacity: 0.9;
+    font-family: WorkSans-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+.figure_input{
+    border: none;
+    background: none;
+    padding: 5px;
+    font-family: WorkSans-Medium;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.input-figure2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+.input-digit{
+    border: none;
+    background: none;
+    font-family: WorkSans-Medium;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.input-digit:active,.input-digit:focus,.input-digit:hover {
+    background: linear-gradient(rgba(255,255,255,0.2));
+}
+.input-digit0:active,.input-digit0:focus,.input-digit0:hover {
+    background: linear-gradient(rgba(255,255,255,0.2));
+}
+.input-digit0{
+    border: none;
+    background: none;
+    font-family: WorkSans-Medium;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.input-digit-cancel{
+    border: none;
+    background: none;
+    font-family: WorkSans-ExtraBold;
+    font-size: 14px;
+    color: #F1C40F;
+    text-align: center;
+    margin-top: 21px;
+}
+.picked-location-next{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    border: 1px solid #95BAD3;
+    border-radius: 30px;
+    margin-bottom: 10px;
+
+}
+.picked-location-next-btn{
+    font-family: WorkSans-SemiBold;
+    font-size: 18px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    border: none;
+    background: none;
+}
+.next-btn{
+    display: flex;
+}
+.next-btn span{
+    font-family: WorkSans-Medium;
+    font-size: 18px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    padding: 0 10px;
+}
